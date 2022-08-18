@@ -1,0 +1,149 @@
+{% load static %}
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mount Monks</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@400;500&display=swap"
+  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'navigation.css' %}">
+
+<link rel="stylesheet" href="{% static 'media-query.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+
+
+      
+    <div id="nav">
+        <div class="contained">
+            <div id="logo">
+                <img src="{% static 'images/logo.png'%}" class="mmlogo">
+            </div>
+            <div class="container4">
+                <div id="hamburger"><span></span><span></span><span></span></div>
+                <div id="close"><span></span></div>
+                <div id="menuWrapper">
+                    <ul>
+                        
+                        <li>
+                            <a href="{% url 'index'%}" alt="1">Home</a>
+                            
+                        </li>
+                        
+                        <li>
+                            <a href="#" alt="1">About us</a>
+                            
+                        </li>
+                        <li>
+                          <a href="#" alt="1">Testimonials</a>
+                         
+                      </li>
+                      <li>
+                        <a href="#" alt="1">Contact us</a>
+                        
+                    </li>
+                
+                        
+                        <a href="{% url 'therapy'%}">
+                        <button class="book"> Book your session</button></a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script  src="{%static 'js/wow.min.js'%}"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>	
+  <script>
+    $(window).scroll(function(){
+    var scrl = $(window).scrollTop();
+    if(scrl < 80)
+        {
+            $('#nav').removeClass('fixedbar');
+        }
+    else{
+        $('#nav').addClass('fixedbar');
+    }
+    var scrl = $(window).scrollTop();
+    if(scrl < 80)
+        {
+            $('.push-left').removeClass('fixedbar');
+        }
+    else{
+        $('.push-left').addClass('fixedbar');
+    }
+    
+    var scrl = $(window).scrollTop();
+    if(scrl < 80)
+        {
+            $('.mmlogo').removeClass('fixedbar');
+        }
+    else{
+        $('.mmlogo').addClass('fixedbar');
+    }
+    
+    
+});
+  </script>
+  <script>
+    $("#hamburger").click(function(event) {
+        event.preventDefault();
+        $("#nav").addClass("showNav");
+        var winHeight = $(window).outerHeight();
+        // Set the window height of the mobile menu when engaged!
+        $('#menuWrapper').css('height',winHeight + 'px');
+      });
+  
+      $("#close").click(function(event) {
+        event.preventDefault();
+        $("#nav").removeClass("showNav");
+        // Set the window height of the mobile menu when not engaged!
+        $('#menuWrapper').css('height','auto');
+      });
+  
+  /* On hover apply a class to the dropdown '.hov' */
+    $('#menuWrapper ul li').hover( function () {
+      var el = $(this).children('ul');
+      // check if it has a class of .hov 
+      if (el.hasClass('hov')) {
+        $(el).removeClass('hov');
+      } else {
+        $(el).addClass('hov');
+      }
+    });
+  </script>
