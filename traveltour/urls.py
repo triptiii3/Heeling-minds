@@ -21,7 +21,6 @@ from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-   
     path('', index, name="index"),
     path('navigation', navigation ,name="navigation"),
     path('therapy', therapy ,name="therapy"),

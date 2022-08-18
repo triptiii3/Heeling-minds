@@ -54,10 +54,10 @@ height: 4000px;
 
 }
 .ocean {
-  height: 82px; /* change the height of the waves here */
+  height: 119px; /* change the height of the waves here */
   width: 100%;
   position: relative;
-  
+  top: 69px;
   right: 0;
   overflow-x: hidden;
  
@@ -155,9 +155,14 @@ header{
 
 
 }
+.blogs{
+  position: relative;
+  left: 708px;
+    font-size: 40px;
+}
 .reachus{
     position: relative;
-    margin-top: 100px;
+    margin-top: -524px;
 }
 .contact{
     background: url(./images/contact.png) no-repeat center center;
@@ -281,14 +286,18 @@ bottom: 105px;
   margin-bottom: 50px;
 }
 .chooseus{
-  width: 50%;
+  width: 70%;
   background: url(./images/mountain-bg-1.jpg) no-repeat bottom left;
   /* margin-left: 50px; */
   position: relative;
   
-  top: 10px;
+  top: -268px;
 
 
+}
+.choose-us-page{
+  top: 100px;
+  position: relative;
 }
 .chooseushead::after{
   display: block;
@@ -317,12 +326,12 @@ bottom: 105px;
   top: 30px;
 }
 .chooseusimg{
-width: 60%;
-height: 600px;
-/* margin-top: -12px; */
-position: relative;
-left: 688px;
-top: -664px;
+  width: 30%;
+  height: 600px;
+  /* margin-top: -12px; */
+  position: relative;
+  left: 984px;
+top: -849px;
     border-radius: 10px;}
 
 .panda{
@@ -527,6 +536,7 @@ top: -664px;
     border: 1px solid #ccc;
     padding: 6px;
 }
+
   
   #contact h3 {
     display: block;
@@ -534,7 +544,82 @@ top: -664px;
     font-weight: 300;
     margin-bottom: 10px;
   }
+  .container2{
+    display: flex;
+    justify-content: center;
+    padding: 191px;
+    margin: 20px;
+  }
+  .reviews{
+    text-align: center;
+  }
   
+  .square:hover {
+      -webkit-transform: translate(20px, -10px);
+      -ms-transform: translate(10px, -10px);
+      transform: translate(10px, -10px);
+      -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+       }
+  
+  
+  .square{
+    width: 460px;
+    margin: 20px;
+    height: 430px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: 0px 20px 50px #D9DBDF;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; 
+  }
+  
+  .mask{
+    clip: rect(0px, 460px, 220px, 0px);
+    border-radius: 4px;
+    position: absolute;
+  }
+  
+  .img{
+    width: 460px;
+    }
+  
+  .h1{
+    margin: auto;
+    text-align: left;
+    margin-top: -2px;
+    padding-left: 30px;
+    color: #000;
+    
+    font-family:'Poppins';
+    font-size: 24px;
+  }
+  p{
+   text-align: justify; 
+   padding-left: 30px;
+   padding-right: 30px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 12px;
+   color: #C8C8C8;
+   line-height: 18px;
+  }
+  
+  .button {
+      background-color: #3EDD84;
+      color: white;
+      width: 90px;
+      padding: 10px 18px;
+      border-radius: 3px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      margin-top: 20px;
+      margin-left: 30px;
+      margin-right: 70px;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: 'merriweather';}
   #contact h4 {
     margin: 5px 0 15px;
     display: block;

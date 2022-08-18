@@ -11,7 +11,18 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-
+#cars{
+    height: 39px;
+    width: 322px;
+    top: -14px;
+    position: relative;
+    left: -1px;
+    margin-top: 21px;
+    color: #808080;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 6px;
+}
 body {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 100;
@@ -76,6 +87,7 @@ fieldset {
   background: #FFF;
   margin: 0 0 5px;
   padding: 10px;
+  border-radius: 10px;
 }
 
 #contact input[type="text"]:hover,
