@@ -8,56 +8,14 @@
 body{
 height: 4000px;
 }
-.footer-col{
-  padding: 10px 50px;
-}
 
-.about-us{
-  padding: 10px;
-}
 
-.col-heading{
-  font-size: 35px;
-  font-family: 'Poppins';
-  color: #373737;
-  font-weight: 200;
-  margin-bottom: 50px;
-}
 
-.about-us-para{
-  width: 180px;
-  font-size: 15px;
-  font-family: 'Montserrat';
-  color: #373737;
-  font-weight: 400;
-  line-height: 25px;
-  margin-bottom: 50px;
-
-}
-.icons{
-  height: 50px;
-  width: 50px;
-}
-.links{
-  text-decoration: none;
-  width: 180px;
-  font-size: 15px;
-  font-family: 'Montserrat';
-  color: #0466e5;
-  font-weight: 400;
-  line-height: 45px;
-  list-style: none;
-  
-}
-.link-head{
-  text-decoration: none;
-
-}
 .ocean {
   height: 119px; /* change the height of the waves here */
   width: 100%;
   position: relative;
-  top: 69px;
+  
   right: 0;
   overflow-x: hidden;
  
@@ -93,31 +51,6 @@ height: 4000px;
     50% {transform: translateX(-25%);}
     100% {transform: translateX(-50%);}
 }
-.icons{
-  height: 50px;
-  width: 50px;
-}
-.links{
-  text-decoration: none;
-  width: 180px;
-  font-size: 15px;
-  font-family: 'Montserrat';
-  color: #0466e5;
-  font-weight: 400;
-  line-height: 45px;
-  list-style: none;
-  
-}
-.link-head{
-  text-decoration: none;
-
-}
-
-.parallax-setting a:hover{
-  border: 2px solid #00bcd4;
-  text-decoration: none;
-  background: transparent;
-}
 
 *::-webkit-scrollbar {
     width: 14px;
@@ -132,6 +65,130 @@ height: 4000px;
     border-radius: 15px;
     border: 3px solid #ffffff;
   }
+  footer{
+    background-color: transparent;
+    left: -10px;
+    top: 148px;
+    position: relative;
+    width: 1565px;
+}
+.footer-col{
+    padding: 10px 50px;
+    position: relative;
+    left: -139px;
+}
+
+.contact-info{
+    padding: 10px;
+    position: relative;
+    left: -139px;
+}
+
+.col-heading{
+    font-size: 20px;
+    font-family: 'Poppins';
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.about-us-para{
+    width: 230px;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    color: #000;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 50px;
+    position: relative;
+    bottom: 9px;
+}
+.icons{
+    height: 50px;
+    width: 50px;
+    color: #3d5a80;
+    position: relative;
+  
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    color: #3d5a80;
+   
+}
+.links{
+    text-decoration: none;
+    width: 180px;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    color: #000;
+    font-weight: 400;
+    line-height: 60px;
+    list-style: none;
+    
+}
+.link-head{
+    text-decoration: none;
+    color: #000;
+    position: relative;
+   
+    
+    padding: 16px 0px;
+    bottom: 20px;
+
+}
+.contacts{
+  text-decoration: none;
+  list-style: none;
+}
+.mail{
+    color: #000;
+    position: relative;
+   
+    text-decoration: none;
+
+}
+.phone{
+    color: #000;
+    position: relative;
+   
+    text-decoration: none;
+}
+.rights{
+    background-color: rgb(0, 0, 0);
+    width: 1540px;
+    height: 81px;
+    position: relative;
+    
+    color: #fff;
+    font-family: 'Montserrat';
+    text-align: center;
+    padding: 33px;
+  
+}
+.right{
+    font-size: 18px;
+}
+.footerlogo{
+    height: 52px;
+    width: 281px;
+    position: relative;
+    bottom: 44px;
+}
+.trip-name{
+    position: relative;
+    font-size: 40px;
+    font-family: 'Poppins';
+    color: #373737;
+}
+footer{
+    background-color: transparent;
+    left: -18px;
+    position: relative;
+    width: 1565px;
+
+}
+
 body{
     overflow-x: hidden;
     background-color: #fff;
@@ -162,16 +219,64 @@ header{
 }
 .reachus{
     position: relative;
-    margin-top: -524px;
+    margin-top: -640px;
+}
+.details{
+  height: 300px;
+  width: 409px;
+  padding: 20px 10px;
+  position: relative;
+  bottom: -134px;
+  left: -100px;
+
+}
+
+.product-icons{
+  width: 20px;
+  height: 20px;
+}
+.detail-heading{
+  position: relative;
+  position: relative;
+  font-family: 'Poppins';
+  color: #193555;
+  font-size: 20px;
+  left: 178px;
+  top: 50px;
+  text-align: center;
+  
+}
+.detail-logos{
+  position: relative;
+  left: 201px;
+  top: 53px;
+      height: 70px;
+  width: 70px;
+  border-bottom: 2px solid #4CAF50;
+
+}
+.detail-content{
+  padding: 25px 24px;
+  position: relative;
+  left: 174px;
+  text-align: left;
+  top: 50px;
+  font-size: 16px;
+  font-family: 'Montserrat';
+  line-height: 1.75;
+  color: #fff;
+  font-weight: 400;
+
 }
 .contact{
     background: url(./images/contact.png) no-repeat center center;
     background-size: cover;
-    height: 624px;
+    height: 645px;
     width: 100%;
     
 
 }
+
 .join{
     font-family: 'Poppins';
     font-size: 30px;
@@ -193,17 +298,34 @@ header{
     top: 132px;
     margin-left: 30px;
 }
-.container {
+.container3 {
+    
+  max-width: 400px;
+  height: 503px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  left: 450px;
+  top: -355px;
+  border-radius: 10px;
+  background-color: #ffffff4a;
+  border: 1px solid #fff;
+  }
+  .container {
+    
     max-width: 400px;
+    
     width: 100%;
     margin: 0 auto;
     position: relative;
-  }
+    
+    }
   
   #contact input[type="text"],
   #contact input[type="email"],
   #contact input[type="tel"],
   #contact input[type="url"],
+  #contact select,
   #contact textarea,
   #contact button[type="submit"] {
     font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
@@ -214,15 +336,105 @@ header{
         padding: 25px;
         margin: 154px 0;
         position: relative;
-        left: 450px;
-        top: -185px;
+        left: 0px;
+    top: -136px;
   }
+  .masonry {
+    columns: 4;
+    column-gap: 16px;
+  }
+  @media (max-width: 1200px) {
+    .masonry {
+      columns: 3;
+    }
+  }
+  @media (max-width: 992px) {
+    .masonry {
+      columns: 2;
+    }
+  }
+  .masonry .grid {
+    display: inline-block;
+    margin-bottom: 16px;
+    position: relative;
+  }
+  .masonry .grid:before {
+    border-radius: 5px;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .masonry .grid img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .masonry .grid__title {
+    font-size: 28px;
+   
+    font-weight: normal;
+    font-family: 'League Spartan';
+
+    margin: 0px 0px 10px 0px;
+  }
+  .masonry .grid__author {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .masonry .grid__link {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  .masonry .grid__body {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px 30px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+  .masonry .grid__tag {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-bottom: 5px;
+  }
+  
+  .mt-auto {
+    margin-top: auto;
+  }
+  .blog{
+    position: relative;
+    top: -100px;
+  }
+  .masonry {
+    columns: 3;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+    column-gap: 20px;
+    row-gap: 20px;
+    top: 125px;
+    position: relative;
+}
   .reviews{
     align-items: center;
     text-align: center;
-    background:url("./images/testimonial-bg-1.jpg");
-    height: 800px;
-bottom: 105px;
+    background:url("./images/blog.png") no-repeat center center;
+    background-size: cover;
+    height: 587px;
+    top: 50px;
+    bottom: 105px;
     position: relative;
 }
 .section-heading2{
@@ -243,9 +455,16 @@ bottom: 105px;
     
 
 }
+.binoculars{
+  position: relative;
+  top: 214px;
+  left: 118px;
+
+  margin-bottom: 9px;
+}
 .chooseushead{
   position: relative;
-  left: 82px;
+  left: 187px;
  
   color: #193555;
  
@@ -267,8 +486,8 @@ bottom: 105px;
   color: #193555;
   font-size: 20px;
   position: relative;
-  top: 75px;
-  left: 81px;
+  top: 89px;
+  left: 107px;
   text-decoration: none;
   font-weight: bold;
   font-family: 'Montserrat';
@@ -327,7 +546,7 @@ bottom: 105px;
 }
 .chooseusimg{
   width: 30%;
-  height: 600px;
+  height: 692px;
   /* margin-top: -12px; */
   position: relative;
   left: 984px;
@@ -520,17 +739,18 @@ top: -849px;
   -webkit-text-fill-color: transparent;
 }
 .testimonial__inner{
-    width: 987px;
-    left: -298px;
+  width: 987px;
+  left: -286px;
+  top: -71px;
     position: relative;
 }
   #cars{
     height: 39px;
     width: 322px;
-    top: -17px;
+    top: -6px;
     position: relative;
     left: -1px;
-    margin-top: 21px;
+    margin-top: 4px;
     color: #808080;
     border-radius: 5px;
     border: 1px solid #ccc;

@@ -24,4 +24,6 @@ urlpatterns = [
     path('', index, name="index"),
     path('navigation', navigation ,name="navigation"),
     path('therapy', therapy ,name="therapy"),
+    path('payment', payment ,name="payment"),
+    path('checkout', checkout ,name="checkout"),
 ]

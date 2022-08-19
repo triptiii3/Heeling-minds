@@ -46,12 +46,13 @@
  
  
 </header>
-<section class="choose-us-page">
+<section class="choose-us-page" >
   <div class="row">
       
       <div class=" chooseus">
-        
-         <h2 class="chooseushead">
+        <img src="{% static './images/binoculars.png'%}" class="binoculars">
+         <h2 class="chooseushead" esz+
+         54ewasz >
         About us
 
          </h2>
@@ -61,12 +62,13 @@ connectivity tools, human rights, and world peace.
 Our flight or fight mechanisms and tribal orientation evolved to survive the Savannah – not the
 urban life. We give you comfort so that you can connect on high-quality video sessions with your
 therapist from the comfort of your home. We want to optimize for enhanced mental well-being for
-a maximum number of people.
+a maximum number of people.<br>
+<br>
 I am currently a licensed psychologist, and a member of the Indian Psychological Association,
 and the National Register of Health Service Psychologists. After completing my medical degree I
 attained a Masters's in Professional Counseling from All India Institute Of Medical Sciences,
 Delhi. Later I spent 5 years studying at Walden University, USA, and completed my Ph.D. in
-Health Psychology.
+Health Psychology.<br><br>
 I have taught multiple psychology courses and have practiced in clinical psychology, psychology
 of physical medicine, and rehabilitation for thirty years. I treated numerous patients in private
 settings, hospitals, and outpatient clinics during that time. I draw on a variety of evidence-based
@@ -79,7 +81,7 @@ work towards their goals of building a ‘life worth living.
       </div> 
     
       <div class=" chooseusmount">
-          <img src="{% static './images/therapist.jpg'%}" class="chooseusimg">
+          <img src="{% static './images/aboutus.png'%}" class="chooseusimg">
       </div>
 
   </div>
@@ -88,38 +90,64 @@ work towards their goals of building a ‘life worth living.
 <a href="https://wa.me/919898989898" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
 <section class="reachus">
-  <div class="contact">
+  <div class="contact" id="webinars">
     <h1>
       Need professionals for webinars?
     </h1>
     <h2>
       Contact us!
     </h2>
-    <div class="container">  
-      <form id="contact"  method="post">
+    <div class="row">
+      <div class="details">
+        <img src="{% static './images/numb1.png'%}" class="detail-logos">
         
+        <p class="detail-content">
+          Found online therapy to be as effective or more have effective than traditional therapy.
+        </p>
+    
+      </div>
+      <div class="details">
+        <img src="{% static './images/numb2.png'%}" class="detail-logos">
+        
+        <p class="detail-content">
+          Percantage of clients experiencing clinically significant change within first 3 months.
+        </p>
+        </div>
+        </div>
+    <div class="container3">  
+      <form id="contact"  method="post">
+        {% csrf_token %}
         <fieldset>
-          <input placeholder="Organisation name" type="text" tabindex="1" required autofocus>
+          <input placeholder="Organisation name" type="text" tabindex="1" name="name" required autofocus>
         </fieldset>
         <fieldset>
-          <input placeholder="Organisation Email Address" type="email" tabindex="2" required>
+          <input placeholder="Organisation Email Address" type="email" name="email" tabindex="2" required>
         </fieldset>
         <fieldset>
-          <input placeholder="Organisation Phone Number (optional)" type="tel" tabindex="3" required>
+          <input placeholder="Organisation Phone Number (optional)" type="tel" name="phone" tabindex="3" required>
         </fieldset>
         <fieldset>
-          <select name="cars" id="cars"  >
+          <select name="issue" id="cars"  >
             
-            <option value="anxiety">anxiety</option>
-            <option value="depression">depression</option>
-            <option value="stress">stress</option>
-            <option value="eating-disorder">eating-disorder</option>
-            <option value="any other">any other</option>
+            <option value="anxiety">Anxiety</option>
+            <option value="depression">Depression</option>
+            <option value="stress">Stress</option>
+            <option value="eating-disorder">Eating-disorder</option>
+            <option value="Relationship Problems">Relationship Problems</option>
+            <option value="any other">Any other</option>
             
           </select>
         </fieldset>
         <fieldset>
-          <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+          <select name="mode" id="cars"  >
+            
+            <option value="online">Online</option>
+            <option value="offline">Offline</option>
+            
+          </select>
+        </fieldset>
+        <fieldset>
+          <textarea name="message" placeholder="Topic of webinar" tabindex="5" required></textarea>
         </fieldset>
         <fieldset>
           <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
@@ -133,36 +161,81 @@ work towards their goals of building a ‘life worth living.
 
  
 </section>
-<section>
+<section class="blog">
  
     <div class="section-heading2">
       <h2 class="blogs"> Blogs</h2>
-  </div> <div class="container2">
-    <div class="square">
-      <img class="img" src="{% static './images/anxiety.jpg'%}" class="mask">
-   <div class="h1">Dealing with anxiety and stress</div>
-      
-      
-   <div><a href="https://medium.com/@laheshk/is-apple-a-design-company-f5c83514e261" target="_" class="button">Read More</a></div>
-    </div>
-    <div class="square">
-      <img class="img" src="{% static './images/therapy.png'%}" class="mask">
-   <div class="h1">Why You Must Take Online Therapy </div>
-      
-      
-   <div><a href="https://medium.com/@laheshk/is-apple-a-design-company-f5c83514e261" target="_" class="button">Read More</a></div>
-    </div>
-    <div class="square">
-      <img class="img" src="{% static './images/news.jpg'%}" class="mask">
-   <div class="h1">Impact of watching news channels covering War 24x7</div>
-      
-      
-   <div><a href="https://medium.com/@laheshk/is-apple-a-design-company-f5c83514e261" target="_" class="button">Read More</a></div>
+  </div> 
+  <div class="masonry">
+    <div class="grid">
+      <img class="blog-image" src="{% static './images/anxiety.jpg'%}">
+      <div class="grid__body">
+        <div class="relative">
+          <a class="grid__link" target="_blank" href="" ></a>
+          <h1 class="grid__title">Dealing with Anxiety Attacks</h1>
+          
+        </div>
+        <div class="mt-auto" >
+          <span class="grid__tag">Anxiety</span>
+        </div>
+      </div>
     </div>
     
-    
+    <div class="grid">
+      <img class="blog-image" src="{% static './images/news.jpg'%}">
+      <div class="grid__body">
+        <div class="relative">
+          <a class="grid__link" target="_blank" href="" ></a>
+          <h1 class="grid__title"> Impact of watching news channels covering War 24x7</h1>
+          
+        </div>
+        <div class="mt-auto" >
+          <span class="grid__tag">news</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <img class="blog-image" src="{% static './images/rs.jpg'%}">
+      <div class="grid__body">
+        <div class="relative">
+          <a class="grid__link" target="_blank" href="" ></a>
+          <h1 class="grid__title">Relationship Problems</h1>
+          
+        </div>
+        <div class="mt-auto" >
+          <span class="grid__tag">relations</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <img class="blog-image" src="{% static './images/eatingdisorder.jpg'%}">
+      <div class="grid__body">
+        <div class="relative">
+          <a class="grid__link" target="_blank" href="" ></a>
+          <h1 class="grid__title"> Eating-disorder</h1>
+          
+        </div>
+        <div class="mt-auto" >
+          <span class="grid__tag">eatingdisorder</span>
+        </div>
+      </div>
+    </div>
+    <div class="grid">
+      <img class="blog-image" src="{% static './images/depression.jpg'%}">
+      <div class="grid__body">
+        <div class="relative">
+          <a class="grid__link" target="_blank" href="" ></a>
+          <h1 class="grid__title">Depression</h1>
+          
+        </div>
+        <div class="mt-auto" >
+          <span class="grid__tag">depression</span>
+        </div>
+      </div>
+    </div>
     
     </div>
+    
     
       
     
@@ -172,7 +245,7 @@ work towards their goals of building a ‘life worth living.
   
 </section>
 <!-- reviews -->
-<section class="reviews">
+<section class="reviews" id="testimonials">
   <div class="section-heading2">
       <h2> Reviews</h2>
   </div>
@@ -270,18 +343,140 @@ work towards their goals of building a ‘life worth living.
       </div>
     </div>
 </section>
-<footer class="footer theme-bg-primary wow fadeInLeft " id="foot">
-  
-  
-   
 
-   <div class="ocean">
+  <footer class="footer theme-bg-primary wow fadeInLeft " id="foot">
+    <div class="container5  py-5 mb-3 col-md-offset-2">
+     <div class="row" style="margin-left: 20px">
+       <div class="footer-col col-lg-3 contact-info">
+         <h4 class="col-heading">CONTACT INFO
+         </h4>
+         <ul class="contacts">
+            <li class="call">
+                <a href="" class="phone">
+                    <i class="fa fa-phone fa icon"> </i>98111189090
+                  </a>
+               
+            </li>
+            <li class="email">
+                <a href="" class="mail">
+                    <i class="fa fa-envelope fa icon"> </i>heelingminds@gmail.com
+                  </a>
+               
+            </li>
+         </ul>
+         <ul class="social-list">
+           <li class="list-inline-item">
+             <a href="">
+               <i class="fa fa-instagram fa-2x icons"></i>
+             </a>
+   
+           </li>
+           <li class="list-inline-item" >
+             <a href="">
+               <i class="fa fa-twitter fa-2x icons"></i>
+             </a>
+   
+           </li>
+           <li class="list-inline-item">
+             <a href="">
+               <i class="fa fa-facebook fa-2x icons"></i>
+             </a>
+   
+           </li>
+   
+         </ul>
+   
+       </div>
+       <div class="footer-col col-lg-3">
+         <h4 class="col-heading">ABOUT US
+         </h4>
+         <ul>
+           <li class="links" >
+             <a href="{% url 'therapy'%}" class="link-head">
+              Book a session
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="#webinars" class="link-head">
+              Book for webinars
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="#testimonials" class="link-head">
+               Testimonials
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="https://wa.me/919898989898" class="link-head">
+               Contact us
+             </a>
+   
+           </li>
+          
+         </ul>
+   
+       </div>
+       
+       <div class="footer-col col-lg-3">
+         <h4 class="col-heading">SUPPORT
+         </h4>
+         <ul>
+           <li class="links">
+             <a href="" class="link-head">
+               Customer Support
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+              Privacy & Policy
+             </a>
+   
+           </li>
+           <li class="links">
+             <a href="" class="link-head">
+               Contact Channels
+             </a>
+   
+           </li>
+          
+         </ul>
+   
+       </div>
+       <div class="footer-col col-lg-3">
+         <h4 class="col-heading">PAY SAFELY WITH US
+         </h4>
+         
+         <p class="about-us-para">
+            The payment is encrypted and transmitted securely with an SSL protocol
+         </p>
+         <img src="{% static './images/creditcard-logo.png'%}" class="footerlogo">
+   
+       </div>
+   
+     </div>
+
+   
+     </div>
+     
+
+   
+    <div class="ocean">
      <div class="wave"></div>
      <div class="wave"></div>
      <div class="wave"></div>
    </div>
+    
+</footer>
   
- </footer> 
+   
+
+   
+  
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

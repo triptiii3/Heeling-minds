@@ -1,4 +1,4 @@
-{% include 'navigation.html'%}
+
 {% load static %}
 
 
@@ -39,23 +39,60 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+<div id="nav">
+  <div class="contained">
+      <div id="logo">
+          <img src="{% static 'images/logo.png'%}" class="mmlogo">
+      </div>
+      <div class="container4">
+          <div id="hamburger"><span></span><span></span><span></span></div>
+          <div id="close"><span></span></div>
+          <div id="menuWrapper">
+              <ul>
+                  
+                  <li>
+                      <a href="{% url 'index'%}" alt="1">Home</a>
+                      
+                  </li>
+                  
+                  <li>
+                      <a href="#aboutus" alt="1">About us</a>
+                      
+                  </li>
+                  <li>
+                    <a href="#testimonials" alt="1">Testimonials</a>
+                   
+                </li>
+                <li>
+                  <a href="https://wa.me/919898989898" alt="1">Contact us</a>
+                  
+              </li>
+          
+                  
+                  <a href="{% url 'therapy'%}">
+                  <button class="book"> Book your session</button></a>
+              </ul>
+          </div>
+      </div>
+  </div>
+</div>
 <div class="container">  
-    <form id="contact" action="" method="post">
-      
+    <form id="contact" action="{% url 'payment'%}" method="post">
+      {% csrf_token %}
         <fieldset>
-            <input placeholder="Name" type="text" tabindex="1" required autofocus>
+            <input placeholder="Name" type="text" name="name" tabindex="1" required autofocus>
           </fieldset>
           <fieldset>
-            <input placeholder=" Email Address" type="email" tabindex="2" required>
+            <input placeholder="Email Address" type="email" name="email" tabindex="2" required>
           </fieldset>
           <fieldset>
-            <input placeholder=" Date of Birth" type="email" tabindex="2" required>
+            <input placeholder="Age" type="text" name="age" tabindex="2" required>
           </fieldset>
           <fieldset>
-            <input placeholder="Phone number" type="tel" tabindex="3" required>
+            <input placeholder="Phone number" name="phone" type="text" tabindex="3" required>
           </fieldset>
           <fieldset>
-            <select name="cars" id="cars"  >
+            <select name="gender" id="cars"  >
               
               <option value="Male">Male</option>
               <option value="Male">Female</option>
@@ -65,21 +102,22 @@
             </select>
           </fieldset>
           <fieldset>
-            <select name="cars" id="cars"  >
+            <select name="issue" id="cars"  >
               
-              <option value="anxiety">anxiety</option>
-              <option value="depression">depression</option>
-              <option value="stress">stress</option>
-              <option value="eating-disorder">eating-disorder</option>
-              <option value="any other">any other</option>
+              <option value="anxiety">Anxiety</option>
+              <option value="depression">Depression</option>
+              <option value="stress">Stress</option>
+              <option value="eating-disorder">Eating-disorder</option>
+              <option value="any other">Any other</option>
               
             </select>
           </fieldset>
           <fieldset>
-            <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+            <textarea name="message" placeholder="Type your message here...." tabindex="5" required></textarea>
           </fieldset>
           <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+            <a href="{% url 'payment'%}">
+            <button name="submit" type="submit">Submit</button></a>
           </fieldset>
          
         </form>

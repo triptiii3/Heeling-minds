@@ -1,0 +1,166 @@
+{% load static %}
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heeling Minds</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'checkout.css' %}">
+
+
+
+
+  
+<div class="Checkout">
+    <div class="Card">
+      <div class="front">
+        <div class="card-chip"></div>
+        <div class="card-logo">
+          DANK<br/>BANK
+        </div>
+        <div class="card-number">
+          <labbel>Card Number</labbel>
+          <div class="mono">
+            0000 0000 0000 0000
+          </div>
+        </div>
+        <div class="card-holder">
+          <label>Card Holder</label>
+          <div class="mono">
+            John Do
+          </div>
+        </div>
+        <div class="card-date">
+          <label>Expires</label>
+          <div class="mono">
+            1/2020
+          </div>
+        </div>
+      </div>
+      <div class="back">
+        <div class="card-strip"></div>
+        <div class="card-logo-back">
+          DANK<br>BANK
+        </div>
+        <div class="card-code">
+          <label>CCV</label>
+          <div class="mono">
+            123
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Form">
+      <form onsubmit="return false">
+        <div class="Input">
+          <label>Card Number</label><input id="number" type="number" />
+        </div>
+        <div class="Input">
+          <label>Card Holder</label><input id="holder" type="text" />
+        </div>
+        <div class="row">
+          <div class="Input">
+            <label>Month</label><select id="month">
+              <option value="01">
+                01
+              </option>
+              <option value="02">
+                02
+              </option>
+              <option value="03">
+                03
+              </option>
+              <option value="04">
+                04
+              </option>
+              <option value="05">
+                05
+              </option>
+              <option value="06">
+                06
+              </option>
+              <option value="07">
+                07
+              </option>
+              <option value="08">
+                08
+              </option>
+              <option value="09">
+                09
+              </option>
+              <option value="10">
+                10
+              </option>
+              <option value="11">
+                11
+              </option>
+              <option value="12">
+                12
+              </option>
+            </select>
+          </div>
+          <div class="Input">
+            <label>Year</label><select id="year">
+              <option value="2019">
+                2019
+              </option>
+              <option value="2020">
+                2020
+              </option>
+              <option value="2021">
+                2021
+              </option>
+              <option value="2022">
+                2022
+              </option>
+              <option value="2023">
+                2023
+              </option>
+              <option value="2024">
+                2024
+              </option>
+              <option value="2025">
+                2025
+              </option>
+            </select>
+          </div>
+          <div class="Input">
+            <label>CCV</label><input id="ccv" type="number" />
+          </div>
+        </div>
+        <button>Checkout</button>
+      </form>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script  src="{%static 'js/wow.min.js'%}"></script>
+<script
+src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+crossorigin="anonymous"
+referrerpolicy="no-referrer"
+></script>	
+  <script>
+    $("input, select").on("input", function() {
+	var value = $(this).val();
+	if ($(this).is("#number")) {
+		value = value.replace(/(.{4})/g,"$1 ");
+		$(".card-number .mono").text(value);
+	} else if ($(this).is("#holder")) {
+		$(".card-holder .mono").text(value);
+	} else if ($(this).is("#month")) {
+		var date = value + $(".card-date .mono").text().slice(2, 8);
+		$(".card-date .mono").text(date);
+	} else if ($(this).is("#year")) {
+		var date = $(".card-date .mono").text().slice(0, 3) + value;
+		$(".card-date .mono").text(date);
+	} else if ($(this).is("#ccv")) {
+		$(".card-code .mono").text(value);
+	} 
+})
+  </script>

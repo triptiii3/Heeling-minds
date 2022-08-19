@@ -104,9 +104,9 @@ z-index: 100;
 }
 .mmlogo.fixedbar{
 	width: 100px;
-	height: 50px;
+	height: 105px;
 	position: relative;
-    top: 14px;
+    top: -16px;
     left: 20px;
 
 }
@@ -115,7 +115,7 @@ z-index: 100;
     display: inline-block;
     width: 172px;
     left: -142px;
-    top: -41px;
+    top: -27px;
     position: relative;
 
     margin-right: 30px;
@@ -151,7 +151,7 @@ z-index: 100;
 	height: auto;
     display: block;
     position: relative;
-	top: -30px;
+	top: -31px;
     left: 28px;
     font-family: 'League Spartan';
 }
@@ -260,259 +260,7 @@ z-index: 100;
 	text-transform:none;
 }
 
-/* Fade = no need for animations - just timing effects... */
 
-.ddFade {
-	 -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
-}
-
-.ddFadeFast {
-	 -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-}
-
-.ddFadeSlow {
-	 -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
-    transition: all 1s ease-in-out;
-}
-
-/* General Animation settings */#nav .container4 ul > li > ul {
-	opacity:0;
-	display:block;
-	perspective:1000px;
-	min-width:inherit;
-	width:200px;
-}
-#nav .container4 ul > li > ul.dropin li {
-	opacity:1;
-	display:block;
-	width:100%;
-	background:#333;
-	padding:3px;
-	display:block;
-	float: left;
-}
-
-li:hover ul.hov {
-	animation-duration: 0.3s;
-	animation-delay: 0.3s;
-}
-
-li:hover ul.hov li {
-		animation-direction: normal;
-		animation-iteration-count:1;
-		animation-timing-function : ease-in-out;
-		background:#333;
-		animation-fill-mode: forwards;
-}
-
-/* Drop In */#nav .container4 ul > li > ul.dropin li {opacity:0; transform: translate(0,-200px);}
-li:hover .dropin li {animation-name: dropin;}
-@keyframes dropin {
-    0%   {opacity:0; transform: translate(0,-200px);}
-    100% {opacity:1; transform: translate(0,0);}
-}
-@-webkit-keyframes dropin {
-    0%   {opacity:0; transform: translate(0,-200px); }
-    100% {opacity:1; transform: translate(0,0);}
-}
-li:hover ul.dropin.hov li:nth-child(1) {
-	animation-duration:0.7s;
-	animation-delay: 2s;
-}
-li:hover ul.dropin.hov li:nth-child(2) {
-	animation-duration:0.6s;
-	animation-delay: 1.5s;
-}
-li:hover ul.dropin.hov li:nth-child(3) {
-	animation-duration: 0.5s;
-	animation-delay: 1s;
-}
-li:hover ul.dropin.hov li:nth-child(4) {
-animation-duration: 0.4s;
-	animation-delay: 0.5s;
-}
-li:hover ul.dropin.hov li:nth-child(5) {
-
-	animation-duration: 0.3s;
-	animation-delay: 0.3s;
-}
-
-/* Drop Up */#nav .container4 ul > li > ul.dropup li {opacity:0; transform: translate(0,200px);}
-li:hover .dropup li {animation-name: dropup;}
-@keyframes dropup {
-    0%   {opacity:0; transform: translate(0,200px);}
-    100% {opacity:1; transform: translate(0,0);}
-}
-@-webkit-keyframes dropup {
-    0%   {opacity:0; transform: translate(0,200px); }
-    100% {opacity:1; transform: translate(0,0);}
-}
-li:hover ul.dropup.hov li:nth-child(1) {
-	animation-duration: 0.3s;
-	animation-delay: 0.3s;
-}
-li:hover ul.dropup.hov li:nth-child(2) {
-	animation-duration: 0.4s;
-	animation-delay: 0.5s;
-}
-li:hover ul.dropup.hov li:nth-child(3) {
-	animation-duration: 0.5s;
-	animation-delay: 1s;
-}
-li:hover ul.dropup.hov li:nth-child(4) {
-	animation-duration:0.6s;
-	animation-delay: 1.5s;
-}
-li:hover ul.dropup.hov li:nth-child(5) {
-	animation-duration:0.7s;
-	animation-delay: 2s;
-}
-
-/* Twist */#nav .container4 ul > li > ul.twist li {
-	transform: rotateY(90deg) ;
-}
-li:hover ul.twist.hov li {
-		animation-name: twist;
-}
-@keyframes twist {
-    0%   {opacity:0;	transform: rotateY(90deg);}
-    100% {opacity:1; transform:  rotateY(0);}
-}
-@-webkit-keyframes twist {
-    0%   {opacity:0;transform:  rotateY(90deg); }
-    100% {opacity:1; transform: rotateY(0);}
-}
-li:hover ul.twist.hov li:nth-child(1) {
-	animation-duration: 0.3s;
-	animation-delay: 0.3s;
-}
-li:hover ul.twist.hov li:nth-child(2) {
-	animation-duration: 0.4s;
-	animation-delay: 0.5s;
-}
-li:hover ul.twist.hov li:nth-child(3) {
-	animation-duration: 0.5s;
-	animation-delay: 1s;
-}
-li:hover ul.twist.hov li:nth-child(4) {
-	animation-duration:0.6s;
-	animation-delay: 1.5s;
-}
-li:hover ul.twist.hov li:nth-child(5) {
-	animation-duration:0.7s;
-	animation-delay: 2s;
-}
-
-/* Curl Right */#nav .container4 ul > li > ul.curl li {
-	opacity:1;
-	transform: translateX(-200px) rotate(-90deg);
-}
-li:hover ul.curl.hov li { animation-name: curl; }
-@keyframes curl {
-    0%   {opacity:0;	transform: translateX(-50%) rotate(-90deg);}
-    100% {opacity:1;transform: translateX(0) rotate(0deg);}
-}
-@-webkit-keyframes curl {
-    0%   {opacity:0;	transform: translateX(-50%) rotate(-90deg); }
-    100% {opacity:1;transform: translateX(0) rotate(0);}
-}
-li:hover ul.curl.hov li:nth-child(1) {
-	animation-duration: 0.3s;
-	animation-delay: 0.3s;
-}
-li:hover ul.curl.hov li:nth-child(2) {
-	animation-duration: 0.4s;
-	animation-delay: 0.5s;
-}
-li:hover ul.curl.hov li:nth-child(3) {
-	animation-duration: 0.5s;
-	animation-delay: 1s;
-}
-li:hover ul.curl.hov li:nth-child(4) {
-	animation-duration:0.6s;
-	animation-delay: 1.5s;
-}
-li:hover ul.curl.hov li:nth-child(5) {
-	animation-duration:0.7s;
-	animation-delay: 2s;
-}
-
-/* Curl Left */#nav .container4 ul > li > ul.curlGoofy li {
-	opacity:1;
-	transform: translateX(200px) rotate(90deg);
-}
-li:hover ul.curlGoofy.hov li { animation-name: curlGoofy; }
-@keyframes curlGoofy {
-    0%   {opacity:0;	transform: translateX(50%) rotate(90deg);}
-    100% {opacity:1;transform: translateX(0) rotate(0deg);}
-}
-@-webkit-keyframes curlGoofy {
-    0%   {opacity:0;	transform: translateX(50%) rotate(90deg); }
-    100% {opacity:1;transform: translateX(0) rotate(0);}
-}
-li:hover ul.curlGoofy.hov li:nth-child(1) {
-	animation-duration: 0.3s;
-	animation-delay: 0.3s;
-}
-li:hover ul.curlGoofy.hov li:nth-child(2) {
-	animation-duration: 0.4s;
-	animation-delay: 0.5s;
-}
-li:hover ul.curlGoofy.hov li:nth-child(3) {
-	animation-duration: 0.5s;
-	animation-delay: 1s;
-}
-li:hover ul.curlGoofy.hov li:nth-child(4) {
-	animation-duration:0.6s;
-	animation-delay: 1.5s;
-}
-li:hover ul.curlGoofy.hov li:nth-child(5) {
-	animation-duration:0.7s;
-	animation-delay: 2s;
-}
-
-/* Swing In right */#nav .container4 ul > li > ul.swing { 
-	transform: translate(-50px,0) rotateY(-90deg); 
-}
-li:hover ul.swing.hov {
-	animation-name: swing;
-	animation-fill-mode: forwards;
-}
-@keyframes swing {
-    0%   {opacity:0; transform: translate(-50px,0) rotateY(-90deg);}
-    100% {opacity:1; transform: translate(0,0) rotateY(0);}
-}
-@-webkit-keyframes swing {
-    0%   {opacity:0; transform: translate(-50px,0) rotateY(-90deg); }
-    100% {opacity:1; transform: translate(0,0) rotateY(0);}
-}
-
-/* Swing In Left */#nav .container4 ul > li > ul.swingLft { 
-	transform: translate(50px,0) rotateY(90deg); 
-}
-li:hover ul.swingLft.hov {
-	animation-name: swingLft;
-	animation-fill-mode: forwards;
-}
-@keyframes swingLft {
-    0%   {opacity:0; transform: translate(50px,0) rotateY(90deg);}
-    100% {opacity:1; transform: translate(0,0) rotateY(0);}
-}
-@-webkit-keyframes swingLft {
-    0%   {opacity:0; transform: translate(50px,0) rotateY(-0deg); }
-    100% {opacity:1; transform: translate(0,0) rotateY(0);}
-}
 
 /* sort all the overing, going on... */#nav ul li:hover a { 
 	color: #fff;
@@ -521,7 +269,10 @@ li:hover ul.swingLft.hov {
 		top:24px;
 		pointer-events: auto;
 	}#nav .container4 ul > li > ul .ico:hover, #nav .container4 ul > li > ul a:hover { background-color: rgba(0,0,0,0.3); }#nav .container4 ul > li:hover ul { top :45px; }
-
+	#nav ul li:hover a { 
+		color: #fff;
+		border-bottom: 2px solid #26ace2;
+	}
 /* A non image based mobile menu and close button */
 #hamburger {
     display: none;
@@ -740,3 +491,6 @@ li:hover ul.swingLft.hov {
 }
 	
 }
+.book:hover{
+	background-color: #277797;
+  }

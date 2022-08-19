@@ -1,0 +1,113 @@
+{%load static %}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heeling Minds</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Poppins:wght@400;500&display=swap"
+  rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" integrity="sha512-doJrC/ocU8VGVRx3O9981+2aYUn3fuWVWvqLi1U+tA2MWVzsw+NVKq1PrENF03M+TYBP92PnYUlXFH1ZW0FpLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{% static 'payment.css' %}">
+
+<link rel="stylesheet" href="{% static 'media-query.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&subset=latin-ext" rel="stylesheet">
+
+<section>
+    <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card text-center">
+              <div class="title">
+                <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                <h2>Basic</h2>
+              </div>
+              <div class="price">
+                <h4><sup>$</sup>25</h4>
+              </div>
+              <div class="option">
+                <ul>
+                <li> <i class="fa fa-check" aria-hidden="true"></i> 10 GB Space </li>
+                <li> <i class="fa fa-check" aria-hidden="true"></i> 3 Domain Names </li>
+                <li> <i class="fa fa-check" aria-hidden="true"></i> 20 Email Address </li>
+                <li> <i class="fa fa-times" aria-hidden="true"></i> Live Support </li>
+                </ul>
+              </div>
+              <a href="{% url 'checkout'%}">Order Now </a>
+            </div>
+          </div>
+          <!-- END Col one -->
+          <div class="col-sm-4">
+            <div class="card text-center">
+              <div class="title">
+                <i class="fa fa-plane" aria-hidden="true"></i>
+                <h2>Standard</h2>
+              </div>
+              <div class="price">
+                <h4><sup>$</sup>50</h4>
+              </div>
+              <div class="option">
+                <ul>
+                <li> <i class="fa fa-check" aria-hidden="true"></i> 50 GB Space </li>
+                <li> <i class="fa fa-check" aria-hidden="true"></i> 5 Domain Names </li>
+                <li> <i class="fa fa-check" aria-hidden="true"></i> Unlimited Email Address </li>
+                <li> <i class="fa fa-times" aria-hidden="true"></i> Live Support </li>
+                </ul>
+              </div>
+              <a href="{% url 'checkout'%}">Order Now </a>
+            </div>
+          </div>
+          <!-- END Col two -->
+          <div class="col-sm-4">
+            <div class="card text-center">
+              <div class="title">
+                <i class="fa fa-rocket" aria-hidden="true"></i>
+                <h2>Premium</h2>
+              </div>
+              <div class="price">
+                <h4><sup>$</sup>100</h4>
+              </div>
+              <div class="option">
+                <ul>
+                <li> <i class="fa fa-check" aria-hidden="true"></i> Unlimited GB Space </li>
+                <li> <i class="fa fa-check" aria-hidden="true"></i> 30 Domain Names </li>
+                <li> <i class="fa fa-check" aria-hidden="true"></i> Unlimited Email Address </li>
+                <li> <i class="fa fa-check" aria-hidden="true"></i> Live Support </li>
+                </ul>
+              </div>
+              <a href="{% url 'checkout'%}">Order Now </a>
+            </div>
+          </div>
+          <!-- END Col three -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $("input[name='expiry-data']").mask("00 / 00");
+  </script>
