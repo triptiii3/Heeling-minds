@@ -44,13 +44,41 @@
   
  <header>
  
+ <img src="{% static './images/doctor.png'%}" class="doctor">
+ <div class="health-box"><h3 class="health"> Health</h3></div>
  
+ <h1 class="heading1">Cannot decide which doctor to go to ?</h1>
+ <h2 class="subheading1"> Take our symptoms test and book a free appointment</h2>
+ <a href="{% url 'therapy'%}">
+  <button class="test"> Symptoms Test</button></a>
 </header>
+<section class="servicess">
+  <div class="provisions">
+   <img class="whitediet" src="{% static './images/whitediet.png'%}">
+   <img class="bluediet" src="{% static './images/bluediet.png'%}">
+   <h1 class="type">Dieticians</h1>
+   <h3 class="content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus recusandae repudiandae dolor voluptates corrupti accusamus quidem quaerat sit debitis ab!</h3>
+  </div>
+  <div class="provisions provisions2">
+    <img class="whitediet" src="{% static './images/drwhite.png'%}">
+    <img class="bluediet" src="{% static './images/drblue.png'%}">
+    <h1 class="type">General Doctors</h1>
+   <h3 class="content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus recusandae repudiandae dolor voluptates corrupti accusamus quidem quaerat sit debitis ab!</h3>
+  </div>
+  <div class="provisions">
+    <img class="whitediet" src="{% static './images/mentalwhite.png'%}">
+    <img class="bluediet" src="{% static './images/mentalblue.png'%}">
+    <h1 class="type">Therapists</h1>
+   <h3 class="content"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus recusandae repudiandae dolor voluptates corrupti accusamus quidem quaerat sit debitis ab!</h3>
+  </div>
+</section>
 <section class="choose-us-page" >
   <div class="row">
       
-      <div class=" chooseus">
-        <img src="{% static './images/binoculars.png'%}" class="binoculars">
+      <div class=" chooseus" id="aboutus">
+        <div class="aboutusbox"><h3 class="aboutus">What About us</h3></div>
+        <img src="{% static './images/aboutdark.png'%}" class="aboutdark">
+        <img src="{% static './images/aboutlight.png'%}" class="aboutlight">
          <h2 class="chooseushead" esz+
          54ewasz >
         About us
@@ -68,20 +96,16 @@ I am currently a licensed psychologist, and a member of the Indian Psychological
 and the National Register of Health Service Psychologists. After completing my medical degree I
 attained a Masters's in Professional Counseling from All India Institute Of Medical Sciences,
 Delhi. Later I spent 5 years studying at Walden University, USA, and completed my Ph.D. in
-Health Psychology.<br><br>
-I have taught multiple psychology courses and have practiced in clinical psychology, psychology
-of physical medicine, and rehabilitation for thirty years. I treated numerous patients in private
-settings, hospitals, and outpatient clinics during that time. I draw on a variety of evidence-based
-methods to tailor and individualize treatment based on each client’s needs. I have a warm and
-compassionate style in relating to my clients, while also encouraging and empowering them to
-work towards their goals of building a ‘life worth living.
+Health Psychology.<br>
 
          </p>
 <a href="" class="learnmore">Learn more <i class="fa fa-arrow-right arrow"></i></a>
       </div> 
     
       <div class=" chooseusmount">
-          <img src="{% static './images/aboutus.png'%}" class="chooseusimg">
+        
+   
+          <img src="{% static './images/aboutus2.png'%}" class="chooseusimg">
       </div>
 
   </div>
@@ -89,6 +113,71 @@ work towards their goals of building a ‘life worth living.
 </section>
 <a href="https://wa.me/919898989898" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
+<section class="consultations">
+  <div class="consult-box">
+    <div class="consultation-box"><h3 class="consultation"> Consultation</h3></div>
+<img src="{%static './images/dr3.png'%}" class="dr3">
+<h1 class="head-consult">Get a free consultation!</h1>
+<div class="container5">  
+  <form id="contact"  method="post" >
+    {% csrf_token %}
+    <fieldset>
+      <input placeholder="Name" type="text" tabindex="1" name="name" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder=" Email Address" type="email" name="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Phone Number" type="tel" name="phone" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Disease" type="text" tabindex="1" name="issue" required >
+    </fieldset>
+    <fieldset>
+      <textarea name="message" placeholder="Message(optional)" tabindex="5" ></textarea>
+    </fieldset>
+   
+    
+   
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+   
+  </form>
+</div>
+
+  </div>
+
+</section>
+<section class="ourservices">
+  <div class="services-box"><h3 class="servicesmain"> Our services</h3></div>
+  <img src="{%static './images/servicesdark.png'%}" class="servicesdark">
+  <img src="{%static './images/serviceslight.png'%}" class="serviceslight"><h1 class="serviceshead">Explore our Main Services</h1>
+<img src="{% static './images/arrow.png'%}">
+<div class="services"><img src="{% static './images/doctor1.png'%}" class="doctor1">
+<div class="number1">
+<h1>01</h1>
+</div>
+<h2 class="service1">Free Consultation Service</h2>
+<h3 class="service1content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam accusamus rerum quae ratione dolores iusto assumenda exercitationem natus, maxime odit?</h3>
+</div>
+<div class="services"><img src="{% static './images/doctor2.png'%}" class="doctor2">
+<div class="number2">
+  <h1>02</h1>
+  </div>
+  <h2 class="service1">Free Consultation Service</h2>
+  <h3 class="service1content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam accusamus rerum quae ratione dolores iusto assumenda exercitationem natus, maxime odit?</h3>
+  </div>
+<div class="services"><img src="{% static './images/doctor3.png'%}" class="doctor3">
+<div class="number3">
+  <h1>03</h1>
+  </div>
+  <h2 class="service1">Free Consultation Service</h2>
+  <h3 class="service1content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam accusamus rerum quae ratione dolores iusto assumenda exercitationem natus, maxime odit?</h3>
+  
+</div>
+
+</section>
 <section class="reachus">
   <div class="contact" id="webinars">
     <h1>
@@ -124,7 +213,7 @@ work towards their goals of building a ‘life worth living.
           <input placeholder="Organisation Email Address" type="email" name="email" tabindex="2" required>
         </fieldset>
         <fieldset>
-          <input placeholder="Organisation Phone Number (optional)" type="tel" name="phone" tabindex="3" required>
+          <input placeholder="Organisation Phone Number (optional)" type="tel" name="phone" tabindex="3" >
         </fieldset>
         <fieldset>
           <select name="issue" id="cars"  >
@@ -134,6 +223,7 @@ work towards their goals of building a ‘life worth living.
             <option value="stress">Stress</option>
             <option value="eating-disorder">Eating-disorder</option>
             <option value="Relationship Problems">Relationship Problems</option>
+            <option value="Health Problems">Health Problems</option>
             <option value="any other">Any other</option>
             
           </select>
@@ -161,191 +251,72 @@ work towards their goals of building a ‘life worth living.
 
  
 </section>
-<section class="blog">
- 
-    <div class="section-heading2">
-      <h2 class="blogs"> Blogs</h2>
-  </div> 
-  <div class="masonry">
-    <div class="grid">
-      <img class="blog-image" src="{% static './images/anxiety.jpg'%}">
-      <div class="grid__body">
-        <div class="relative">
-          <a class="grid__link" target="_blank" href="" ></a>
-          <h1 class="grid__title">Dealing with Anxiety Attacks</h1>
-          
-        </div>
-        <div class="mt-auto" >
-          <span class="grid__tag">Anxiety</span>
-        </div>
-      </div>
-    </div>
-    
-    <div class="grid">
-      <img class="blog-image" src="{% static './images/news.jpg'%}">
-      <div class="grid__body">
-        <div class="relative">
-          <a class="grid__link" target="_blank" href="" ></a>
-          <h1 class="grid__title"> Impact of watching news channels covering War 24x7</h1>
-          
-        </div>
-        <div class="mt-auto" >
-          <span class="grid__tag">news</span>
-        </div>
-      </div>
-    </div>
-    <div class="grid">
-      <img class="blog-image" src="{% static './images/rs.jpg'%}">
-      <div class="grid__body">
-        <div class="relative">
-          <a class="grid__link" target="_blank" href="" ></a>
-          <h1 class="grid__title">Relationship Problems</h1>
-          
-        </div>
-        <div class="mt-auto" >
-          <span class="grid__tag">relations</span>
-        </div>
-      </div>
-    </div>
-    <div class="grid">
-      <img class="blog-image" src="{% static './images/eatingdisorder.jpg'%}">
-      <div class="grid__body">
-        <div class="relative">
-          <a class="grid__link" target="_blank" href="" ></a>
-          <h1 class="grid__title"> Eating-disorder</h1>
-          
-        </div>
-        <div class="mt-auto" >
-          <span class="grid__tag">eatingdisorder</span>
-        </div>
-      </div>
-    </div>
-    <div class="grid">
-      <img class="blog-image" src="{% static './images/depression.jpg'%}">
-      <div class="grid__body">
-        <div class="relative">
-          <a class="grid__link" target="_blank" href="" ></a>
-          <h1 class="grid__title">Depression</h1>
-          
-        </div>
-        <div class="mt-auto" >
-          <span class="grid__tag">depression</span>
-        </div>
-      </div>
-    </div>
-    
-    </div>
-    
-    
-      
-    
-    
-  </div>
+
+<section class="seventhpage">
+  <img src="{%static './images/reviewsdark.png'%}" class="reviewsdark">
+  <img src="{%static './images/reviewslight.png'%}" class="reviewslight">
+  <div class="reviews-box" ><h3 class="reviews"> Reviews</h3></div>
+  <h1 class="section-heading7 wow slideInDown"id="testimonials">Good says from our customers</h1>
   
-  
-</section>
-<!-- reviews -->
-<section class="reviews" id="testimonials">
-  <div class="section-heading2">
-      <h2> Reviews</h2>
-  </div>
-  <div class="testimonial">
-      <div class="container">
-       <div class="testimonial__inner">
-         <div class="testimonial-slider">
-           <div class="testimonial-slide">
-             <div class="testimonial_box">
-               <div class="testimonial_box-inner">
-                 <div class="testimonial_box-top">
-                   <div class="testimonial_box-icon">
-                     <i class="fa fa-quote-right"></i>
-                   </div>
-                   <div class="testimonial_box-text">
-                     <p>Therapy with Felicity gave me a new lease on life. I was at the point of ending things & within
-                      </p>
-                   </div>
-                   
-                  <div class="testimonial_box-name">
-                    <h4>John Doe</h4>
-                 </div>
-                 <div class="testimonial_box-job">
-                   <p>MANAGER</p>
-                 </div>
-                 </div>
-               </div>
+  <div class="container">
+    <section id="testim" class="testim">
+             <div class="testim-cover">
+                <div class="wrap">
+    
+                    <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
+                    <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
+                    <ul id="testim-dots" class="dots">
+                        <li class="dot active"></li><!--
+                        --><li class="dot"></li><!--
+                        --><li class="dot"></li><!--
+                        --><li class="dot"></li><!--
+                        --><li class="dot"></li>
+                    </ul>
+                    <div id="testim-content" class="cont">
+                        
+                        <div class="active">
+                            <div class="img"><img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/kartik-aaryan-1045198-08-12-2017-06-34-11.jpg" alt=""></div>
+                            <h2>Lorem P. Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        </div>
+    
+                        <div>
+                            <div class="img"><img src="https://timesofindia.indiatimes.com/thumb/msid-75752690,width-800,height-600,resizemode-4/75752690.jpg" alt=""></div>
+                            <h2>Mr. Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        </div>
+    
+                        <div>
+                            <div class="img"><img src="https://p16.muscdn.com/img/musically-maliva-obj/1627333501517830~c5_720x720.jpeg" alt=""></div>
+                            <h2>Lorem Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        </div>
+    
+                        <div>
+                            <div class="img"><img src="https://p16-sg-default.akamaized.net/aweme/1080x1080/tiktok-obj/1666413671597057.jpeg" alt=""></div>
+                            <h2>Lorem De Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        </div>
+    
+                        <div>
+                            <div class="img"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKLJe1Lrz2N3ufVSwQokSJ79jGBbIptXuVnsdxMmNUlE14ohwp&usqp=CAU" alt=""></div>
+                            <h2>Ms. Lorem R. Ipsum</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>                    
+                        </div>
+    
+                    </div>
+    
+                </div>
              </div>
-           </div>
-           <div class="testimonial-slide">
-            <div class="testimonial_box">
-              <div class="testimonial_box-inner">
-                <div class="testimonial_box-top">
-                  <div class="testimonial_box-icon">
-                    <i class="fa fa-quote-right"></i>
-                  </div>
-                  <div class="testimonial_box-text">
-                    <p>Therapy with Felicity gave me a new lease on life. I was at the point of ending things & within</p>
-                  </div>
-                  
-                 <div class="testimonial_box-name">
-                   <h4>John Doe</h4>
-                </div>
-                <div class="testimonial_box-job">
-                  <p>CEO</p>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-slide">
-            <div class="testimonial_box">
-              <div class="testimonial_box-inner">
-                <div class="testimonial_box-top">
-                  <div class="testimonial_box-icon">
-                    <i class="fa fa-quote-right"></i>
-                  </div>
-                  <div class="testimonial_box-text">
-                    <p>Therapy with Felicity gave me a new lease on life. I was at the point of ending things & within</p>
-                  </div>
-                  
-                 <div class="testimonial_box-name">
-                   <h4>John Doe</h4>
-                </div>
-                <div class="testimonial_box-job">
-                  <p>Co-Founder</p>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-slide">
-            <div class="testimonial_box">
-              <div class="testimonial_box-inner">
-                <div class="testimonial_box-top">
-                  <div class="testimonial_box-icon">
-                    <i class="fa fa-quote-right"></i>
-                  </div>
-                  <div class="testimonial_box-text">
-                    <p>Therapy with Felicity gave me a new lease on life. I was at the point of ending things & within</p>
-                  </div>
-                  
-                 <div class="testimonial_box-name">
-                   <h4>John Doe</h4>
-                </div>
-                <div class="testimonial_box-job">
-                  <p>SEO</p>
-                </div>
-                </div>
-              </div>
-            </div>
-          </div>
-         </div>
-       </div>
-      </div>
+        </section>
     </div>
+   
+    
+  
 </section>
 
   <footer class="footer theme-bg-primary wow fadeInLeft " id="foot">
-    <div class="container5  py-5 mb-3 col-md-offset-2">
+    <div class="container6  py-5 mb-3 col-md-offset-2">
      <div class="row" style="margin-left: 20px">
        <div class="footer-col col-lg-3 contact-info">
          <h4 class="col-heading">CONTACT INFO
@@ -453,7 +424,7 @@ work towards their goals of building a ‘life worth living.
          <p class="about-us-para">
             The payment is encrypted and transmitted securely with an SSL protocol
          </p>
-         <img src="{% static './images/creditcard-logo.png'%}" class="footerlogo">
+         <img src="{% static './images/razorpay.png'%}" class="footerlogo">
    
        </div>
    
@@ -462,13 +433,11 @@ work towards their goals of building a ‘life worth living.
    
      </div>
      
-
+     <div class="rights">
+      <h3 class="right">Made by Tripti Chugh © All right reserved</h3>
+      </div>
    
-    <div class="ocean">
-     <div class="wave"></div>
-     <div class="wave"></div>
-     <div class="wave"></div>
-   </div>
+  
     
 </footer>
   
@@ -508,7 +477,8 @@ document.body.classList.toggle(className);
 </script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+<script src="jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
 
@@ -516,38 +486,114 @@ document.body.classList.toggle(className);
 
 
 <script>
+  'use strict'
+var	testim = document.getElementById("testim"),
+  testimDots = Array.prototype.slice.call(document.getElementById("testim-dots").children),
+  testimContent = Array.prototype.slice.call(document.getElementById("testim-content").children),
+  testimLeftArrow = document.getElementById("left-arrow"),
+  testimRightArrow = document.getElementById("right-arrow"),
+  testimSpeed = 4500,
+  currentSlide = 0,
+  currentActive = 0,
+  testimTimer,
+  touchStartPos,
+  touchEndPos,
+  touchPosDiff,
+  ignoreTouch = 30;
+;
 
-   
-  $(document).ready(function() {
-  $('.testimonial-slider').slick({
-      autoplay: true,
-      autoplaySpeed: 3000,
-      speed: 600,
-      draggable: true,
-      infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      arrows: false,
-      dots: false,
-      responsive: [
-          {
-            breakpoint: 991,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1,
-            }
-          },
-          {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              }
-          }
-      ]
-  });
-}); 
+window.onload = function() {
 
+  // Testim Script
+  function playSlide(slide) {
+      for (var k = 0; k < testimDots.length; k++) {
+          testimContent[k].classList.remove("active");
+          testimContent[k].classList.remove("inactive");
+          testimDots[k].classList.remove("active");
+      }
+
+      if (slide < 0) {
+          slide = currentSlide = testimContent.length-1;
+      }
+
+      if (slide > testimContent.length - 1) {
+          slide = currentSlide = 0;
+      }
+
+      if (currentActive != currentSlide) {
+          testimContent[currentActive].classList.add("inactive");            
+      }
+      testimContent[slide].classList.add("active");
+      testimDots[slide].classList.add("active");
+
+      currentActive = currentSlide;
+  
+      clearTimeout(testimTimer);
+      testimTimer = setTimeout(function() {
+          playSlide(currentSlide += 1);
+      }, testimSpeed)
+  }
+
+  testimLeftArrow.addEventListener("click", function() {
+      playSlide(currentSlide -= 1);
+  })
+
+  testimRightArrow.addEventListener("click", function() {
+      playSlide(currentSlide += 1);
+  })    
+
+  for (var l = 0; l < testimDots.length; l++) {
+      testimDots[l].addEventListener("click", function() {
+          playSlide(currentSlide = testimDots.indexOf(this));
+      })
+  }
+
+  playSlide(currentSlide);
+
+  // keyboard shortcuts
+  document.addEventListener("keyup", function(e) {
+      switch (e.keyCode) {
+          case 37:
+              testimLeftArrow.click();
+              break;
+              
+          case 39:
+              testimRightArrow.click();
+              break;
+
+          case 39:
+              testimRightArrow.click();
+              break;
+
+          default:
+              break;
+      }
+  })
+  
+  testim.addEventListener("touchstart", function(e) {
+      touchStartPos = e.changedTouches[0].clientX;
+  })
+
+  testim.addEventListener("touchend", function(e) {
+      touchEndPos = e.changedTouches[0].clientX;
+    
+      touchPosDiff = touchStartPos - touchEndPos;
+    
+      console.log(touchPosDiff);
+      console.log(touchStartPos);	
+      console.log(touchEndPos);	
+
+    
+      if (touchPosDiff > 0 + ignoreTouch) {
+          testimLeftArrow.click();
+      } else if (touchPosDiff < 0 - ignoreTouch) {
+          testimRightArrow.click();
+      } else {
+        return;
+      }
+    
+  })
+}
 </script>
 
 <script>
